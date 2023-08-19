@@ -138,8 +138,8 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">CONTACT ME</h1>
-                    <p><img src="icons8-email-50.png">aliya10akhtar3a@gmail.com</p>
-                    <p><img src="icons8-phone-50.png">03341893595</p>
+                    <a href="mailto:aliya10akhtar3a@gmail.com"><img src="icons8-email-50.png">aliya10akhtar3a@gmail.com</a><br>
+                    <a href="tel:03341893595"><img src="icons8-phone-50.png">03341893595</a>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/aliyaakhtar"><img src="icons8-linkedin-50.png" class="linkdin"></a>
                         <a href="https://github.com/AliyaAkhtar"><img src="icons8-github-50.png"></a>
@@ -147,11 +147,12 @@
                     <a href="Aliya Akhtar Resume (2).pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form onsubmit="sendEmail(); return false;">
-                        <input type="text" id="fullName" name="Name" placeholder="Your Name" required>
-                        <input type="email" id="email_id" name="Email" placeholder="Your Email" required>
-                        <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                    <form id="contact-form">
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <textarea id="message" placeholder="Message" required></textarea>
+                        <button type="button" id="submit-btn" class="btn btn2">Submit</button>
+                        <div id="loader" class="hidden"></div>
                     </form>
                 </div>
             </div>
